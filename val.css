@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif  ;  
+    font-weight: 400;
+    font-size: larger;
+
+  
+  }
+.header{
+    height:100vh;
+    background-image:/*linear-gradient(to right bottom,
+    rgba(231, 26, 26, 0.908),
+    rgba(255, 0, 0, 0.904)),*/
+   
+     url(../val/val_img/backgroung1.jpg) ;
+    background-size: cover ;
+}
+.h1{
+    text-align: center;
+    padding: 30px;
+    animation-name: moveinbottom;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+
+}
+.p1{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Pattaya', sans-serif; ;
+    
+}
+.p2{
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: moveinright;
+    animation-timing-function: ease-in;
+}
+.p3{
+    text-align: center;
+    padding: 20px;
+}
+.p4{
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    animation-duration: 5s;
+    animation-name: moveinleft;
+    animation-timing-function: ease-in;
+    font-family: 'Kite One', sans-serif;
+}
+.wish{
+    text-align: center;
+    padding: 40px;
+    animation-duration: 5s;
+    animation-name: moveinbottom;
+    animation-timing-function: ease-in;
+font-family: 'Pattaya', sans-serif;
+}
+@keyframes moveinleft{
+    0%{
+       opacity: 0;
+       transform: translateX(-10px);
+ 
+    }
+    80%{
+       transform: translateX(1px);
+        
+    }
+    100%{
+       opacity: 1;
+       transform: translate(0);
+ 
+    }
+ }
+ @keyframes moveinright{
+   0%{
+      opacity: 0;
+      transform: translateX(10px);
+ 
+   }
+   80%{
+      transform: translateX(-1px);
+       
+   }
+   100%{
+      opacity: 1;
+      transform: translate(0%);
+ 
+ 
+   }
+ }
+@keyframes moveinbottom{
+    
+    
+    0%{
+       opacity: 0;
+       transform: translateY(3px);
+  
+    }
+    
+    
+    
+    100%{
+       opacity: 1;
+       transform: translate(0 );
+  
+  
+    }
+}
